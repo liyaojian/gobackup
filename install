@@ -12,6 +12,6 @@ if [[ `whoami` == 'root' ]]; then
 else
    sudo mv gobackup /usr/local/bin/gobackup
 fi
-mkdir -p ~/.gobackup && touch ~/.gobackup/gobackup.yml
+mkdir -p ~/.gobackup && cd ~/.gobackup && wget https://raw.githubusercontent.com/liyaojian/gobackup/master/gobackup.yml
 rm gobackup.tar.gz
 
